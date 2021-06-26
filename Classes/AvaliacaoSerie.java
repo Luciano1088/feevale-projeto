@@ -15,12 +15,13 @@ public class AvaliacaoSerie {
         this.critica = critica;
     }
 
+    // getters e setters
     public int getNota(){
         return nota;
     }
 
     public void setNota(int nota){
-        if(nota <0 || nota > 5){
+        if(nota < 0 || nota > 5){
             System.out.println("Erro! Nota invalida!");
         }else{
             this.nota = nota; 
@@ -36,11 +37,12 @@ public class AvaliacaoSerie {
         this.critica = critica;
     }
 
-    public String imprimir(){
+    // Metodos para imprimir avaliação
+    public String avaliacaoDramatica(){
         return ("-Nota: " + nota + "\nCritica:\n" + critica);
     }
 
-    public String imprimir2(){
+    public String avaliacaoDocumental(){
         return ("\nCritica:\n" + critica + "\nNota:" + nota);
     }
 

@@ -1,23 +1,23 @@
-public class ConceitoSerie {
+public class Serie {
 
-    //atributos.
+    //atributos
     private String titulo;
     private String sinopse;
     private int anoLancamento;
-    private AvaliacaoSerie as;
+    private AvaliacaoSerie as; //Faz associação com classe avaliação série
 
     //default
-    public ConceitoSerie(){
+    public Serie(){
         
     }
     //construtores
-    public ConceitoSerie(String titulo, String sinopse, int anoLancamento){
+    public Serie(String titulo, String sinopse, int anoLancamento){
         this.titulo = titulo;
         this.sinopse = sinopse;
         this.anoLancamento = anoLancamento;
     }
 
-    public ConceitoSerie(String titulo, String sinopse, int anoLancamento, AvaliacaoSerie as){
+    public Serie(String titulo, String sinopse, int anoLancamento, AvaliacaoSerie as){
         this.titulo = titulo;
         this.sinopse = sinopse;
         this.anoLancamento = anoLancamento;
@@ -57,9 +57,8 @@ public class ConceitoSerie {
         this.as = as;
     }
 
-    public String imprimir(){
-        return ("\n\nTitulo: " + titulo + "\nSinopse: " + sinopse + "\n" + anoLancamento + as.imprimir());
+    public String imprimirSerie() {
+        return ("\n\nTitulo: " + titulo + "\nSinopse: " + sinopse + "\n" + anoLancamento + as.avaliacaoDramatica());
     }
 
-    
 }
