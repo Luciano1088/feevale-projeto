@@ -1,6 +1,6 @@
 public class ConceitoSerie {
 
-    //atributos
+    //atributos.
     private String titulo;
     private String sinopse;
     private int anoLancamento;
