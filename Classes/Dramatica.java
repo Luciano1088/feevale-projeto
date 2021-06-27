@@ -21,6 +21,7 @@ public class Dramatica extends Serie {
         this.ct = ct;
     }
 
+    //metodo get e set
     public String getGenero(){
         return genero;
     }

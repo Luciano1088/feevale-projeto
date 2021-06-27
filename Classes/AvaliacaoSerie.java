@@ -43,7 +43,7 @@ public class AvaliacaoSerie {
     }
 
     public String avaliacaoDocumental(){
-        return ("\nCritica:\n" + critica + "\nNota:" + nota);
+        return ("\nCritica:\n" + critica + "\nNota: " + nota);
     }
 
 }
