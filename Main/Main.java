@@ -14,7 +14,7 @@ public class Main {
         AvaliacaoSerie avalDoc = new AvaliacaoSerie();
 
         avalDoc.setNota(5);
-        avalDoc.setCritica("Nenhuma critica, otimo documentario!");
+        avalDoc.setCritica("Otimo documentario!");
 
         doc.setAs(avalDoc);
  //------------------------------------------------------------------       

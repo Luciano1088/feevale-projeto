@@ -14,15 +14,13 @@ public class Temporada {
         this.quantidadeEp = quantidadeEp;
     }
 
-    //metodos
+    //metodos getters e setters
     public int getNumero(){
         return numero;
     }
 
     public void setNumero(int numero){
-      
-            this.numero = numero;
-      
+         this.numero = numero;  
     }
 
     public int getQuantidadeEp(){
@@ -33,6 +31,7 @@ public class Temporada {
         this.quantidadeEp = quantidadeEp;
     }
 
+    //impressão serie dramatica
     public String imprimirTemporada(){
         return ("Temporadas: " + numero);
     }

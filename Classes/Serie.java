@@ -24,7 +24,7 @@ public class Serie {
         this.as = as;
     }
 
-    //metodos de acesso
+    //metodos getters e setters
     public String getTitulo(){
         return titulo;
     }
@@ -49,6 +49,7 @@ public class Serie {
         this.anoLancamento = anoLancamento;
     }
 
+    //metodo associação a classe avaliação serie
     public AvaliacaoSerie getAs(){
         return as;
     }
@@ -57,6 +58,7 @@ public class Serie {
         this.as = as;
     }
 
+    //metodo impressao serie dramatica
     public String imprimirSerie() {
         return ("\n\nTitulo: " + titulo + "\nSinopse: " + sinopse + "\n" + anoLancamento + as.avaliacaoDramatica());
     }

@@ -3,10 +3,12 @@ public class Dramatica extends Serie {
     private Temporada ct; //Faz associação com classe temporada
     private AvaliacaoSerie as; //Faz associação com classe avaliação série
 
+    //default
     public Dramatica(){
 
     }
 
+    //contrutores
     public Dramatica(String genero, String titulo, String sinopse, int anoLancamento){
         super(titulo, sinopse, anoLancamento);
         this.genero = genero;
@@ -27,6 +29,7 @@ public class Dramatica extends Serie {
         this.genero = genero;
     }
 
+    //metodos de associação
     public AvaliacaoSerie getAs(){
         return as;
     }
@@ -42,7 +45,7 @@ public class Dramatica extends Serie {
     public void setCt(Temporada ct){
         this.ct = ct;
     }
-    //método imprimir
+    //método imprimir serie dramastica
     public String imprimirDrama(){
         return ("Titulo: " + getTitulo() + "\nSinopse: " + getSinopse() + "\n" + getGenero() + " - " + ct.imprimirTemporada() + "\n" + getAnoLancamento() + as.avaliacaoDramatica());
 
